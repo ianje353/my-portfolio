@@ -61,7 +61,7 @@ export default function Portfolio() {
 
             <div className="space-y-4">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-                Hi, I'm{" "}
+                Hi, I&apos;m{" "}
                 <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
                   Ian Je Nierre
                 </span>
@@ -105,8 +105,8 @@ export default function Portfolio() {
           <div className="max-w-3xl mx-auto text-center space-y-4 px-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
             <p className="text-muted-foreground md:text-lg">
-              I'm a fresh IT graduate with hands-on experience in front-end development and UI/UX design. I enjoy
-              building clean, responsive user interfaces and creating smooth, user-friendly experiences. I'm eager to
+              I&apos;m a fresh IT graduate with hands-on experience in front-end development and UI/UX design. I enjoy
+              building clean, responsive user interfaces and creating smooth, user-friendly experiences. I&apos;m eager to
               grow my skills and contribute to a creative and collaborative team.
             </p>
             <div className="grid gap-6 md:grid-cols-3 pt-8">
@@ -197,7 +197,7 @@ export default function Portfolio() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center space-y-4 mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Featured Projects</h2>
-              <p className="text-muted-foreground md:text-lg">Some of my recent work that I'm proud of</p>
+              <p className="text-muted-foreground md:text-lg">Some of my recent work that I&apos;m proud of</p>
             </div>
 
             {/* First row of projects */}
@@ -408,7 +408,7 @@ export default function Portfolio() {
           <div className="max-w-2xl mx-auto text-center space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get In Touch</h2>
             <p className="text-muted-foreground md:text-lg">
-              I'm always open to discussing new opportunities and interesting projects. Let's create something amazing
+              I&apos;m always open to discussing new opportunities and interesting projects. Let&apos;s create something amazing
               together!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
