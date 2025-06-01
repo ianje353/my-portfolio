@@ -49,7 +49,7 @@ export default function Portfolio() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/10 rounded-full blur-3xl"></div>
                 <Image
-                  src="/images/profile.jpg"
+                  src="/images/Profile.png"
                   alt="Profile"
                   width={400}
                   height={400}
