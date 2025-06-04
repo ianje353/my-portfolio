@@ -16,6 +16,7 @@ import {
   Palette,
   Smartphone,
   Figma,
+  PlaySquare,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -209,7 +210,6 @@ export default function Portfolio() {
                     <Badge variant="secondary">Next.js</Badge>
                     <Badge variant="secondary">TypeScript</Badge>
                     <Badge variant="secondary">Tailwind CSS</Badge>
-                    <Badge variant="secondary">Vue.js</Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -224,9 +224,7 @@ export default function Portfolio() {
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary">Node.js</Badge>
                     <Badge variant="secondary">Python</Badge>
-                    <Badge variant="secondary">PostgreSQL</Badge>
                     <Badge variant="secondary">MongoDB</Badge>
-                    <Badge variant="secondary">GraphQL</Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -240,8 +238,6 @@ export default function Portfolio() {
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary">Git</Badge>
-                    <Badge variant="secondary">Docker</Badge>
-                    <Badge variant="secondary">AWS</Badge>
                     <Badge variant="secondary">Vercel</Badge>
                     <Badge variant="secondary">Figma</Badge>
                   </div>
@@ -456,9 +452,9 @@ export default function Portfolio() {
                       asChild
                       className="w-full"
                     >
-                      <Link href="https://github.com">
-                        <Github className="mr-2 h-4 w-4" />
-                        Code
+                      <Link href="https://play.google.com/store/apps/details?id=com.byaheDVO_Navigation.byahe_dvo">
+                        <PlaySquare className="mr-2 h-4 w-4" />
+                        PlayStore
                       </Link>
                     </Button>
                   </div>
@@ -476,7 +472,7 @@ export default function Portfolio() {
                   />
                 </div>
                 <CardHeader className="flex-grow">
-                  <CardTitle>Social Media Dashboard</CardTitle>
+                  <CardTitle>Aptura Real Estate</CardTitle>
                   <CardDescription>
                     A dashboard for tracking and analyzing social media metrics
                     across platforms
@@ -530,9 +526,9 @@ export default function Portfolio() {
             {/* First row of Certificates */}
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-8">
               <Card className="overflow-hidden h-full flex flex-col w-full">
-                <div className="relative h-48 bg-muted">
+                <div className="relative h-64 bg-muted">
                   <Image
-                    src="/images/Apartment_listing.png"
+                    src="/images/CyberSec.png"
                     alt="Apartment Listing"
                     width={400}
                     height={225}
@@ -540,14 +536,14 @@ export default function Portfolio() {
                   />
                 </div>
                 <CardHeader className="flex-grow">
-                  <CardTitle>Apartment Listing</CardTitle>
+                  <CardTitle>Cyber Security</CardTitle>
                 </CardHeader>
               </Card>
 
               <Card className="overflow-hidden h-full flex flex-col w-full">
-                <div className="relative h-48 bg-muted">
+                <div className="relative h-64 bg-muted">
                   <Image
-                    src="/images/inventory_system.png"
+                    src="/images/Database.png"
                     alt="Inventory System"
                     width={400}
                     height={225}
@@ -555,38 +551,14 @@ export default function Portfolio() {
                   />
                 </div>
                 <CardHeader className="flex-grow">
-                  <CardTitle>Task Management App</CardTitle>
-                  <CardDescription>
-                    A collaborative task management tool with real-time updates
-                    and team features
-                  </CardDescription>
+                  <CardTitle>Database</CardTitle>                
                 </CardHeader>
-                <CardContent className="mt-auto">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge variant="outline">Html</Badge>
-                    <Badge variant="outline">CSS</Badge>
-                    <Badge variant="outline">PHP</Badge>
-                  </div>
-                  <div className="flex gap-2">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      asChild
-                      className="w-full"
-                    >
-                      <Link href="https://github.com">
-                        <Github className="mr-2 h-4 w-4" />
-                        Code
-                      </Link>
-                    </Button>
-                  </div>
-                </CardContent>
               </Card>
 
               <Card className="overflow-hidden h-full flex flex-col w-full">
-                <div className="relative h-48 bg-muted">
+                <div className="relative h-64 bg-muted">
                   <Image
-                    src="/images/Doctor_appointment_system.png"
+                    src="/images/HtmlCss.jpg"
                     alt="Doctor Appointment System"
                     width={400}
                     height={225}
@@ -594,42 +566,17 @@ export default function Portfolio() {
                   />
                 </div>
                 <CardHeader className="flex-grow">
-                  <CardTitle>Doctor Appointment System</CardTitle>
-                  <CardDescription>
-                    A healthcare scheduling system with appointment booking and
-                    management
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="mt-auto">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge variant="outline">MongoDb</Badge>
-                    <Badge variant="outline">Express</Badge>
-                    <Badge variant="outline">React</Badge>
-                    <Badge variant="outline">Node.js</Badge>
-                  </div>
-                  <div className="flex gap-2">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      asChild
-                      className="w-full"
-                    >
-                      <Link href="https://github.com">
-                        <Github className="mr-2 h-4 w-4" />
-                        Code
-                      </Link>
-                    </Button>
-                  </div>
-                </CardContent>
+                  <CardTitle>Html and CSS</CardTitle>                 
+                </CardHeader>               
               </Card>
             </div>
 
             {/* Second row of projects */}
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <Card className="overflow-hidden h-full flex flex-col w-full">
-                <div className="relative h-48 bg-muted">
+                <div className="relative h-64 bg-muted">
                   <Image
-                    src="/images/Realty_property_system.png"
+                    src="/images/networking.jpg"
                     alt="Realty Property System"
                     width={400}
                     height={225}
@@ -637,36 +584,16 @@ export default function Portfolio() {
                   />
                 </div>
                 <CardHeader className="flex-grow">
-                  <CardTitle>Realty Property System</CardTitle>
-                  <CardDescription>
-                    A real estate platform for property listings, searches, and
-                    agent management
-                  </CardDescription>
+                  <CardTitle>Networking</CardTitle>
+                  
                 </CardHeader>
-                <CardContent className="mt-auto">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge variant="outline">Vb.net</Badge>
-                  </div>
-                  <div className="flex gap-2">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      asChild
-                      className="w-full"
-                    >
-                      <Link href="https://github.com">
-                        <Github className="mr-2 h-4 w-4" />
-                        Code
-                      </Link>
-                    </Button>
-                  </div>
-                </CardContent>
+                
               </Card>
 
               <Card className="overflow-hidden h-full flex flex-col w-full">
-                <div className="relative h-48 bg-muted">
+                <div className="relative h-64 bg-muted">
                   <Image
-                    src="/images/ByaheDVO.png"
+                    src="/images/Python.jpg"
                     alt="ByaheDVO"
                     width={400}
                     height={225}
@@ -674,37 +601,16 @@ export default function Portfolio() {
                   />
                 </div>
                 <CardHeader className="flex-grow">
-                  <CardTitle>ByaheDVO</CardTitle>
-                  <CardDescription>
-                    A travel guide app for Davao City with interactive maps and
-                    local recommendations
-                  </CardDescription>
+                  <CardTitle>Python</CardTitle>
+                  
                 </CardHeader>
-                <CardContent className="mt-auto">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge variant="outline">Flutter</Badge>
-                    <Badge variant="outline">Firebase</Badge>
-                  </div>
-                  <div className="flex gap-2">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      asChild
-                      className="w-full"
-                    >
-                      <Link href="https://github.com">
-                        <Github className="mr-2 h-4 w-4" />
-                        Code
-                      </Link>
-                    </Button>
-                  </div>
-                </CardContent>
+                
               </Card>
 
               <Card className="overflow-hidden h-full flex flex-col w-full">
-                <div className="relative h-48 bg-muted">
+                <div className="relative h-64 bg-muted">
                   <Image
-                    src="/images/Aptura.png"
+                    src="/images/Firebase.png"
                     alt="Social Media Dashboard"
                     width={400}
                     height={225}
@@ -712,30 +618,10 @@ export default function Portfolio() {
                   />
                 </div>
                 <CardHeader className="flex-grow">
-                  <CardTitle>Social Media Dashboard</CardTitle>
-                  <CardDescription>
-                    A dashboard for tracking and analyzing social media metrics
-                    across platforms
-                  </CardDescription>
+                  <CardTitle>Firebase</CardTitle>
+                  
                 </CardHeader>
-                <CardContent className="mt-auto">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge variant="outline">Figma</Badge>
-                  </div>
-                  <div className="flex gap-2">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      asChild
-                      className="w-full"
-                    >
-                      <Link href="https://www.figma.com/design/6q6g03bmTKSVo9TU7bVOeP/OJT_Nierre?node-id=1-4&t=KrrA60R1sAuzH7jH-1">
-                        <Figma className="mr-2 h-4 w-4" />
-                        Figma
-                      </Link>
-                    </Button>
-                  </div>
-                </CardContent>
+                
               </Card>
             </div>
           </div>
