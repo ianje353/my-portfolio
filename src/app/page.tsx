@@ -1,9 +1,24 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Github, Linkedin, Mail, Download, Code, Palette, Smartphone, Figma } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Download,
+  Code,
+  Palette,
+  Smartphone,
+  Figma,
+} from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Portfolio() {
   return (
@@ -18,16 +33,34 @@ export default function Portfolio() {
               </Link>
             </div>
             <nav className="flex items-center space-x-6 text-sm font-medium">
-              <Link href="#about" className="transition-colors hover:text-foreground/80">
+              <Link
+                href="#about"
+                className="transition-colors hover:text-foreground/80"
+              >
                 About
               </Link>
-              <Link href="#skills" className="transition-colors hover:text-foreground/80">
+              <Link
+                href="#skills"
+                className="transition-colors hover:text-foreground/80"
+              >
                 Skills
               </Link>
-              <Link href="#projects" className="transition-colors hover:text-foreground/80">
+              <Link
+                href="#projects"
+                className="transition-colors hover:text-foreground/80"
+              >
                 Projects
               </Link>
-              <Link href="#contact" className="transition-colors hover:text-foreground/80">
+              <Link
+                href="#certificates"
+                className="transition-colors hover:text-foreground/80"
+              >
+                Certificaftes
+              </Link>
+              <Link
+                href="#contact"
+                className="transition-colors hover:text-foreground/80"
+              >
                 Contact
               </Link>
             </nav>
@@ -66,12 +99,15 @@ export default function Portfolio() {
                   Ian Je Nierre
                 </span>
               </h1>
-              <p className="text-xl text-muted-foreground md:text-2xl">UI/UX Designer</p>
+              <p className="text-xl text-muted-foreground md:text-2xl">
+                UI/UX Designer/Front-End Developer
+              </p>
             </div>
 
             <p className="max-w-[600px] text-muted-foreground md:text-lg mx-auto">
-              I create beautiful, functional, and user-centered digital experiences. Passionate about clean code,
-              innovative design, and solving complex problems.
+              I create beautiful, functional, and user-centered digital
+              experiences. Passionate about clean code, innovative design, and
+              solving complex problems.
             </p>
 
             <div className="flex flex-col gap-3 min-[400px]:flex-row justify-center">
@@ -84,15 +120,24 @@ export default function Portfolio() {
             </div>
 
             <div className="flex items-center space-x-4 pt-4 justify-center">
-              <Link href="https://github.com" className="text-muted-foreground hover:text-foreground">
+              <Link
+                href="https://github.com/ianje353"
+                className="text-muted-foreground hover:text-foreground"
+              >
                 <Github className="h-6 w-6" />
                 <span className="sr-only">GitHub</span>
               </Link>
-              <Link href="https://linkedin.com" className="text-muted-foreground hover:text-foreground">
+              <Link
+                href="https://www.linkedin.com/in/ian-je-nierre-b8435b314/"
+                className="text-muted-foreground hover:text-foreground"
+              >
                 <Linkedin className="h-6 w-6" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="mailto:ianjenierre@example.com" className="text-muted-foreground hover:text-foreground">
+              <Link
+                href="mailto:ianjenierre@gmail.com"
+                className="text-muted-foreground hover:text-foreground"
+              >
                 <Mail className="h-6 w-6" />
                 <span className="sr-only">Email</span>
               </Link>
@@ -103,11 +148,15 @@ export default function Portfolio() {
         {/* About Section */}
         <section id="about" className="container px-4 py-24 bg-muted/50">
           <div className="max-w-3xl mx-auto text-center space-y-4 px-4">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              About Me
+            </h2>
             <p className="text-muted-foreground md:text-lg">
-              I&apos;m a fresh IT graduate with hands-on experience in front-end development and UI/UX design. I enjoy
-              building clean, responsive user interfaces and creating smooth, user-friendly experiences. I&apos;m eager to
-              grow my skills and contribute to a creative and collaborative team.
+              I&apos;m a fresh IT graduate with hands-on experience in front-end
+              development and UI/UX design. I enjoy building clean, responsive
+              user interfaces and creating smooth, user-friendly experiences.
+              I&apos;m eager to grow my skills and contribute to a creative and
+              collaborative team.
             </p>
             <div className="grid gap-6 md:grid-cols-3 pt-8">
               <div className="flex flex-col items-center space-y-2">
@@ -139,14 +188,20 @@ export default function Portfolio() {
         <section id="skills" className="container px-4 py-24">
           <div className="max-w-4xl mx-auto">
             <div className="text-center space-y-4 mb-12">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Skills & Technologies</h2>
-              <p className="text-muted-foreground md:text-lg">Technologies I work with to bring ideas to life</p>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Skills & Technologies
+              </h2>
+              <p className="text-muted-foreground md:text-lg">
+                Technologies I work with to bring ideas to life
+              </p>
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
               <Card>
                 <CardHeader>
                   <CardTitle>Frontend</CardTitle>
-                  <CardDescription>Building interactive user interfaces</CardDescription>
+                  <CardDescription>
+                    Building interactive user interfaces
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
@@ -161,7 +216,9 @@ export default function Portfolio() {
               <Card>
                 <CardHeader>
                   <CardTitle>Backend</CardTitle>
-                  <CardDescription>Server-side development and APIs</CardDescription>
+                  <CardDescription>
+                    Server-side development and APIs
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
@@ -176,7 +233,9 @@ export default function Portfolio() {
               <Card>
                 <CardHeader>
                   <CardTitle>Tools & Others</CardTitle>
-                  <CardDescription>Development tools and platforms</CardDescription>
+                  <CardDescription>
+                    Development tools and platforms
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
@@ -193,11 +252,18 @@ export default function Portfolio() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="container px-4 py-24 bg-muted/50">
+        <section
+          id="projects"
+          className="container rounded-2xl px-4 py-24 bg-muted/50"
+        >
           <div className="max-w-6xl mx-auto">
             <div className="text-center space-y-4 mb-12">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Featured Projects</h2>
-              <p className="text-muted-foreground md:text-lg">Some of my recent work that I&apos;m proud of</p>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Featured Projects
+              </h2>
+              <p className="text-muted-foreground md:text-lg">
+                Some of my recent work that I&apos;m proud of
+              </p>
             </div>
 
             {/* First row of projects */}
@@ -215,7 +281,8 @@ export default function Portfolio() {
                 <CardHeader className="flex-grow">
                   <CardTitle>Apartment Listing</CardTitle>
                   <CardDescription>
-                    A full-stack apartment listing with HTML, CSS, JavaScript, and API integration
+                    A full-stack apartment listing with HTML, CSS, JavaScript,
+                    and API integration
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="mt-auto">
@@ -226,7 +293,12 @@ export default function Portfolio() {
                     <Badge variant="outline">C#</Badge>
                   </div>
                   <div className="flex gap-2">
-                    <Button size="sm" variant="outline" asChild className="w-full">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      asChild
+                      className="w-full"
+                    >
                       <Link href="https://github.com">
                         <Github className="mr-2 h-4 w-4" />
                         Code
@@ -249,7 +321,8 @@ export default function Portfolio() {
                 <CardHeader className="flex-grow">
                   <CardTitle>Task Management App</CardTitle>
                   <CardDescription>
-                    A collaborative task management tool with real-time updates and team features
+                    A collaborative task management tool with real-time updates
+                    and team features
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="mt-auto">
@@ -259,7 +332,12 @@ export default function Portfolio() {
                     <Badge variant="outline">PHP</Badge>
                   </div>
                   <div className="flex gap-2">
-                    <Button size="sm" variant="outline" asChild className="w-full">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      asChild
+                      className="w-full"
+                    >
                       <Link href="https://github.com">
                         <Github className="mr-2 h-4 w-4" />
                         Code
@@ -282,7 +360,8 @@ export default function Portfolio() {
                 <CardHeader className="flex-grow">
                   <CardTitle>Doctor Appointment System</CardTitle>
                   <CardDescription>
-                    A healthcare scheduling system with appointment booking and management
+                    A healthcare scheduling system with appointment booking and
+                    management
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="mt-auto">
@@ -290,10 +369,15 @@ export default function Portfolio() {
                     <Badge variant="outline">MongoDb</Badge>
                     <Badge variant="outline">Express</Badge>
                     <Badge variant="outline">React</Badge>
-                    <Badge variant="outline">Node.js</Badge>                    
+                    <Badge variant="outline">Node.js</Badge>
                   </div>
                   <div className="flex gap-2">
-                    <Button size="sm" variant="outline" asChild className="w-full">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      asChild
+                      className="w-full"
+                    >
                       <Link href="https://github.com">
                         <Github className="mr-2 h-4 w-4" />
                         Code
@@ -319,7 +403,8 @@ export default function Portfolio() {
                 <CardHeader className="flex-grow">
                   <CardTitle>Realty Property System</CardTitle>
                   <CardDescription>
-                    A real estate platform for property listings, searches, and agent management
+                    A real estate platform for property listings, searches, and
+                    agent management
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="mt-auto">
@@ -327,7 +412,12 @@ export default function Portfolio() {
                     <Badge variant="outline">Vb.net</Badge>
                   </div>
                   <div className="flex gap-2">
-                    <Button size="sm" variant="outline" asChild className="w-full">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      asChild
+                      className="w-full"
+                    >
                       <Link href="https://github.com">
                         <Github className="mr-2 h-4 w-4" />
                         Code
@@ -350,7 +440,8 @@ export default function Portfolio() {
                 <CardHeader className="flex-grow">
                   <CardTitle>ByaheDVO</CardTitle>
                   <CardDescription>
-                    A travel guide app for Davao City with interactive maps and local recommendations
+                    A travel guide app for Davao City with interactive maps and
+                    local recommendations
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="mt-auto">
@@ -359,7 +450,12 @@ export default function Portfolio() {
                     <Badge variant="outline">Firebase</Badge>
                   </div>
                   <div className="flex gap-2">
-                    <Button size="sm" variant="outline" asChild className="w-full">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      asChild
+                      className="w-full"
+                    >
                       <Link href="https://github.com">
                         <Github className="mr-2 h-4 w-4" />
                         Code
@@ -382,15 +478,257 @@ export default function Portfolio() {
                 <CardHeader className="flex-grow">
                   <CardTitle>Social Media Dashboard</CardTitle>
                   <CardDescription>
-                    A dashboard for tracking and analyzing social media metrics across platforms
+                    A dashboard for tracking and analyzing social media metrics
+                    across platforms
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="mt-auto">
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge variant="outline">Figma</Badge>              
+                    <Badge variant="outline">Figma</Badge>
                   </div>
                   <div className="flex gap-2">
-                    <Button size="sm" variant="outline" asChild className="w-full">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      asChild
+                      className="w-full"
+                    >
+                      <Link href="https://www.figma.com/design/6q6g03bmTKSVo9TU7bVOeP/OJT_Nierre?node-id=1-4&t=KrrA60R1sAuzH7jH-1">
+                        <Figma className="mr-2 h-4 w-4" />
+                        Figma
+                      </Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Empty space for visual separation */}
+        <div className="container px-4 py-16">
+          <div className="max-w-6xl mx-auto">
+            {/* Empty space for visual separation */}
+          </div>
+        </div>
+
+        {/*Certificate Sections */}
+        <section
+          id="certificates"
+          className="container rounded-2xl px-4 py-24 bg-muted/50"
+        >
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center space-y-4 mb-12">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Certificates
+              </h2>
+              {/*<p className="text-muted-foreground md:text-lg">
+                Some of my recent work that I&apos;m proud of
+              </p>*/}
+            </div>
+
+            {/* First row of Certificates */}
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-8">
+              <Card className="overflow-hidden h-full flex flex-col w-full">
+                <div className="relative h-48 bg-muted">
+                  <Image
+                    src="/images/Apartment_listing.png"
+                    alt="Apartment Listing"
+                    width={400}
+                    height={225}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <CardHeader className="flex-grow">
+                  <CardTitle>Apartment Listing</CardTitle>
+                </CardHeader>
+              </Card>
+
+              <Card className="overflow-hidden h-full flex flex-col w-full">
+                <div className="relative h-48 bg-muted">
+                  <Image
+                    src="/images/inventory_system.png"
+                    alt="Inventory System"
+                    width={400}
+                    height={225}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <CardHeader className="flex-grow">
+                  <CardTitle>Task Management App</CardTitle>
+                  <CardDescription>
+                    A collaborative task management tool with real-time updates
+                    and team features
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="mt-auto">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="outline">Html</Badge>
+                    <Badge variant="outline">CSS</Badge>
+                    <Badge variant="outline">PHP</Badge>
+                  </div>
+                  <div className="flex gap-2">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      asChild
+                      className="w-full"
+                    >
+                      <Link href="https://github.com">
+                        <Github className="mr-2 h-4 w-4" />
+                        Code
+                      </Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden h-full flex flex-col w-full">
+                <div className="relative h-48 bg-muted">
+                  <Image
+                    src="/images/Doctor_appointment_system.png"
+                    alt="Doctor Appointment System"
+                    width={400}
+                    height={225}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <CardHeader className="flex-grow">
+                  <CardTitle>Doctor Appointment System</CardTitle>
+                  <CardDescription>
+                    A healthcare scheduling system with appointment booking and
+                    management
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="mt-auto">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="outline">MongoDb</Badge>
+                    <Badge variant="outline">Express</Badge>
+                    <Badge variant="outline">React</Badge>
+                    <Badge variant="outline">Node.js</Badge>
+                  </div>
+                  <div className="flex gap-2">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      asChild
+                      className="w-full"
+                    >
+                      <Link href="https://github.com">
+                        <Github className="mr-2 h-4 w-4" />
+                        Code
+                      </Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Second row of projects */}
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+              <Card className="overflow-hidden h-full flex flex-col w-full">
+                <div className="relative h-48 bg-muted">
+                  <Image
+                    src="/images/Realty_property_system.png"
+                    alt="Realty Property System"
+                    width={400}
+                    height={225}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <CardHeader className="flex-grow">
+                  <CardTitle>Realty Property System</CardTitle>
+                  <CardDescription>
+                    A real estate platform for property listings, searches, and
+                    agent management
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="mt-auto">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="outline">Vb.net</Badge>
+                  </div>
+                  <div className="flex gap-2">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      asChild
+                      className="w-full"
+                    >
+                      <Link href="https://github.com">
+                        <Github className="mr-2 h-4 w-4" />
+                        Code
+                      </Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden h-full flex flex-col w-full">
+                <div className="relative h-48 bg-muted">
+                  <Image
+                    src="/images/ByaheDVO.png"
+                    alt="ByaheDVO"
+                    width={400}
+                    height={225}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <CardHeader className="flex-grow">
+                  <CardTitle>ByaheDVO</CardTitle>
+                  <CardDescription>
+                    A travel guide app for Davao City with interactive maps and
+                    local recommendations
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="mt-auto">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="outline">Flutter</Badge>
+                    <Badge variant="outline">Firebase</Badge>
+                  </div>
+                  <div className="flex gap-2">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      asChild
+                      className="w-full"
+                    >
+                      <Link href="https://github.com">
+                        <Github className="mr-2 h-4 w-4" />
+                        Code
+                      </Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden h-full flex flex-col w-full">
+                <div className="relative h-48 bg-muted">
+                  <Image
+                    src="/images/Aptura.png"
+                    alt="Social Media Dashboard"
+                    width={400}
+                    height={225}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <CardHeader className="flex-grow">
+                  <CardTitle>Social Media Dashboard</CardTitle>
+                  <CardDescription>
+                    A dashboard for tracking and analyzing social media metrics
+                    across platforms
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="mt-auto">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="outline">Figma</Badge>
+                  </div>
+                  <div className="flex gap-2">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      asChild
+                      className="w-full"
+                    >
                       <Link href="https://www.figma.com/design/6q6g03bmTKSVo9TU7bVOeP/OJT_Nierre?node-id=1-4&t=KrrA60R1sAuzH7jH-1">
                         <Figma className="mr-2 h-4 w-4" />
                         Figma
@@ -406,9 +744,12 @@ export default function Portfolio() {
         {/* Contact Section */}
         <section id="contact" className="container px-4 py-24">
           <div className="max-w-2xl mx-auto text-center space-y-4">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get In Touch</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              Get In Touch
+            </h2>
             <p className="text-muted-foreground md:text-lg">
-              I&apos;m always open to discussing new opportunities and interesting projects. Let&apos;s create something amazing
+              I&apos;m always open to discussing new opportunities and
+              interesting projects. Let&apos;s create something amazing
               together!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
@@ -436,15 +777,24 @@ export default function Portfolio() {
                 © {new Date().getFullYear()} Ian Je Nierre. All rights reserved.
               </p>
               <div className="flex items-center space-x-4 mt-4 sm:mt-0">
-                <Link href="https://github.com" className="text-muted-foreground hover:text-foreground">
+                <Link
+                  href="https://github.com/ianje353"
+                  className="text-muted-foreground hover:text-foreground"
+                >
                   <Github className="h-5 w-5" />
                   <span className="sr-only">GitHub</span>
                 </Link>
-                <Link href="https://www.linkedin.com/in/ian-je-nierre-b8435b314/" className="text-muted-foreground hover:text-foreground">
+                <Link
+                  href="https://www.linkedin.com/in/ian-je-nierre-b8435b314/"
+                  className="text-muted-foreground hover:text-foreground"
+                >
                   <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
                 </Link>
-                <Link href="mailto:ianjenierre@gmail.com" className="text-muted-foreground hover:text-foreground">
+                <Link
+                  href="mailto:ianjenierre@gmail.com"
+                  className="text-muted-foreground hover:text-foreground"
+                >
                   <Mail className="h-5 w-5" />
                   <span className="sr-only">Email</span>
                 </Link>
@@ -454,5 +804,5 @@ export default function Portfolio() {
         </footer>
       </div>
     </div>
-  )
+  );
 }
