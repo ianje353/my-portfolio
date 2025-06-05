@@ -120,3 +120,158 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* New Animation Styles */
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes morph-1 {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0) scale(1);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  25% {
+    transform: translateX(20px) translateY(-30px) scale(1.1);
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  50% {
+    transform: translateX(-15px) translateY(25px) scale(0.9);
+    border-radius: 50% 60% 30% 60% / 30% 60% 70% 40%;
+  }
+  75% {
+    transform: translateX(30px) translateY(10px) scale(1.05);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+@keyframes morph-2 {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0) scale(1);
+    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+  }
+  33% {
+    transform: translateX(-25px) translateY(20px) scale(1.1);
+    border-radius: 70% 30% 40% 60% / 40% 70% 30% 60%;
+  }
+  66% {
+    transform: translateX(20px) translateY(-15px) scale(0.95);
+    border-radius: 30% 70% 60% 40% / 60% 40% 60% 40%;
+  }
+}
+
+@keyframes morph-3 {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0) scale(1) rotate(0deg);
+    border-radius: 50% 50% 50% 50% / 60% 40% 60% 40%;
+  }
+  50% {
+    transform: translateX(15px) translateY(-20px) scale(1.2) rotate(180deg);
+    border-radius: 40% 60% 40% 60% / 50% 50% 50% 50%;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Animation Classes */
+.animate-twinkle {
+  animation: twinkle ease-in-out infinite;
+}
+
+.animate-morph-1 {
+  animation: morph-1 20s ease-in-out infinite;
+}
+
+.animate-morph-2 {
+  animation: morph-2 25s ease-in-out infinite;
+}
+
+.animate-morph-3 {
+  animation: morph-3 15s ease-in-out infinite;
+}
+
+.animate-slide-right {
+  animation: slide-right 8s linear infinite;
+}
+
+.animate-slide-right-delayed {
+  animation: slide-right 10s linear infinite;
+  animation-delay: 3s;
+}
+
+.animate-slide-right-slow {
+  animation: slide-right 12s linear infinite;
+  animation-delay: 6s;
+}
+
+.animate-slide-down {
+  animation: slide-down 15s linear infinite;
+}
+
+.animate-slide-down-delayed {
+  animation: slide-down 18s linear infinite;
+  animation-delay: 5s;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 30s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 25s linear infinite;
+}
